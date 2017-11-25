@@ -2,8 +2,9 @@
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <title>Suhas Jagannath</title>
    <style>
       body {
@@ -15,6 +16,7 @@
       font-family: monospace;
       font-size: 16px;
       text-align: center;
+      margin: 0;
       }
       .navbar a {
       color: aliceblue;
@@ -32,6 +34,12 @@
       .bodyText {
       font-family: monospace;
       font-size: 14px;
+      text-align: center;
+      }
+      @media (min-width: 768px) {
+        .bodyText {
+          text-align: left;
+        }
       }
       .highlightBlue {
       color: cornflowerblue;
@@ -43,17 +51,28 @@
    </style>
 </head>
 <body>
-   <div class="container-fluid">
+   <div class="container">
       <div class="row justify-content-md-center">
          <div class="titlebar col-lg-12">Suhas Jagannath</div>
       </div>
       <div class="navbar row justify-content-md-center">
          <div class="col-lg-12"><a href="/">Home</a><a href="mailto:suhas.jagannath@email.ucr.edu">Email</a><a href="/resume">Resume</a><a href="/linkedin">LinkedIn</a></div>
       </div>
-      <div class="row bodyText">
+      <div class="row bodyText w-500">
          <div class="col-lg-12">
-            Suhas Jagannath is a first-year Computer Engineering student currently attending <span class="highlightBlue">UC Riverside</span>.
+            Suhas is a first-year Computer Engineering student currently attending <span class="highlightBlue">UC Riverside</span>. He enjoys working on both physical hardware based projects as well as web development and software oriented projects.
          </div>
       </div>
+      <div class="row navbar">
+        <a href="#projects" data-toggle="collapse">Check out what I've been up to...</a>
+        <div id="projects" class="collapse">
+          <ul>
+            <li>Project 1</li>
+              <li>Project 2</li>
+                <li>Project 3</li>
+              </ul>
+        </div>
+      </div>
+    </div>
    </div>
 </body>
