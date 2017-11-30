@@ -1,78 +1,121 @@
 <!DOCTYPE html>
+
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <title>Suhas Jagannath</title>
-   <style>
-      body {
+  <title>Suhas Jagannath</title>
+  <style>
+    .container {
+      max-width: 600px;
+    }
+
+    body {
       background: #383c4a;
       color: aliceblue;
       display: flex;
-      }
-      .navbar{
+    }
+    body em {
+      color: cornflowerblue;
+      font-style: normal;
+    }
+
+    .navbar {
       font-family: monospace;
       font-size: 16px;
       text-align: center;
       margin: 0;
-      }
-      .navbar a {
+    }
+
+    .navbar a {
       color: aliceblue;
-      padding-right:10px;
+      padding-right: 10px;
       text-decoration: underline;
-      }
-      .navbar a:hover {
-      text-decoration: none ;
-      }
-      .titlebar {
+    }
+
+    .navbar a:hover {
+      text-decoration: none;
+    }
+
+    .titlebar {
       font-family: 'Oswald', sans-serif;
       font-size: 48px;
       text-align: center;
-      }
-      .bodyText {
+    }
+
+    .bodyText {
       font-family: monospace;
       font-size: 14px;
       text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .bodyText {
+        text-align: left;
       }
-      @media (min-width: 768px) {
-        .bodyText {
-          text-align: left;
-        }
-      }
-      .highlightBlue {
+    }
+
+    .highlightBlue {
       color: cornflowerblue;
-      }
-      .imageClass {
+    }
+
+    .imageClass {
       border: 5px aliceblue solid;
       border-radius: 3px;
-      }
-   </style>
+    }
+
+    .col-sm-6 {
+      display: inline-block;
+    }
+    #projects {
+      font-family: monospace;
+      font-size: 14px;
+      text-align: left;
+    }
+    #projects div {
+      padding: 0px;
+    }
+    #projects a {
+      color: gold;
+    }
+    .projectRow {
+      margin-top: 10px;
+    }
+    .projectDate {
+      color: darkgray;
+    }
+  </style>
 </head>
+
 <body>
-   <div class="container">
-      <div class="row justify-content-md-center">
-         <div class="titlebar col-lg-12">Suhas Jagannath</div>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="titlebar col-lg-12">Suhas Jagannath</div>
+    </div>
+    <div class="navbar row justify-content-md-center">
+      <div class="col-lg-12"><a href="/">Home</a><a href="mailto:suhas.jagannath@email.ucr.edu">Email</a><a href="/suhasjagannath-resume.pdf">Resume</a><a href="/linkedin">LinkedIn</a></div>
+    </div>
+    <div class="row bodyText w-500">
+      <div class="col-lg-12">
+        Suhas is a first-year Computer Engineering student currently attending <em>UC Riverside</em>. He enjoys working on both physical hardware based projects as well as web development and software oriented projects.
       </div>
-      <div class="navbar row justify-content-md-center">
-         <div class="col-lg-12"><a href="/">Home</a><a href="mailto:suhas.jagannath@email.ucr.edu">Email</a><a href="/resume">Resume</a><a href="/linkedin">LinkedIn</a></div>
-      </div>
-      <div class="row bodyText w-500">
-         <div class="col-lg-12">
-            Suhas is a first-year Computer Engineering student currently attending <span class="highlightBlue">UC Riverside</span>. He enjoys working on both physical hardware based projects as well as web development and software oriented projects.
-         </div>
-      </div>
-      <div class="row navbar">
-        <a href="#projects" data-toggle="collapse">Check out what I've been up to...</a>
-        <div id="projects" class="collapse">
-          <ul>
-            <li>Project 1</li>
-              <li>Project 2</li>
-                <li>Project 3</li>
-              </ul>
+    </div>
+    <div class="row navbar">
+      <a href="#projects" data-toggle="collapse">Check out what I've been up to...</a>
+      <div id="projects" class="collapse">
+        <div class="row projectRow">
+          <div class="col-sm-3 projectDate">November 2017</div>
+          <div class="col-sm-9">Attended the UC Riverside hosted <em>Cutie Hack</em>, with an Arduino based LCD screen game in which the character has to dodge incoming blocks. Won the <em>"Organizer's Choice Award"</em>, given to hardworking groups that created a unique project. View the entry <a href="https://devpost.com/software/arduinolcdgame">here!</a></div>
+        </div>
+        <div class="col-sm-12"></div>
+        <div class="row projectRow">
+          <div class="col-sm-3 projectDate">June 2015</div>
+          <div class="col-sm-9">Created a <em>Java</em> based app that allowed the user to play a piano capable of changing octave and instrument, with an additional note sequence recording mode. View the source code <a href=""onloadedmetadata="https://github.com/sjaga003/MIDIJava">here!</a></div>
         </div>
       </div>
     </div>
-   </div>
+  </div>
+  </div>
 </body>
